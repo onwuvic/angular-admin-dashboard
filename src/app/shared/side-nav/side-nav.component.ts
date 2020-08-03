@@ -8,10 +8,12 @@ import { ROUTES } from '../models';
   styleUrls: ['./side-nav.component.scss']
 })
 export class SideNavComponent implements OnInit {
+  menuItems: any[];
 
   constructor() { }
 
   ngOnInit(): void {
+    this.menuItems = ROUTES.filter(menuItem => menuItem);
   }
 
 }

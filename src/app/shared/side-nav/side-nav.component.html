@@ -1,1 +1,15 @@
-<p>side-nav works!</p>
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a [routerLink]="['dashboard']" class="simple-text">
+      Charis
+    </a>
+  </div>
+
+  <ul class="nav">
+    <li *ngFor="let menuItem of menuItems">
+      <a [routerLink]="[menuItem.path]" routerLinkActive="router-link-active">
+        <p>{{ menuItem.title }}</p>
+      </a>
+    </li>
+  </ul>
+</div>
