@@ -2,14 +2,15 @@
 
 .sidebar-wrapper {
   background-image: linear-gradient(
-        to right bottom,
-        rgba(var(--color-primary-light), 0.8),
-        rgba(var(--color-primary-dark), 0.8)
+        to bottom,
+        rgba(#7B2CBF, 0.8),
+        rgba(#3C096C, 0.8)
     ),
     url('../../../assets/img/sidebar-3.jpg');
   background-size: cover;
-  background-position: top;
+  background-position: center center;
   // TEMP
   // background-color: orangered;
   height: 100vh;
+  color: #fff;
 }
