@@ -1,5 +1,15 @@
+@import '../../../assets/sass/abstracts/variables';
+
 .sidebar-wrapper {
+  background-image: linear-gradient(
+        to right bottom,
+        rgba(var(--color-primary-light), 0.8),
+        rgba(var(--color-primary-dark), 0.8)
+    ),
+    url('../../../assets/img/sidebar-3.jpg');
+  background-size: cover;
+  background-position: top;
   // TEMP
-  background-color: orangered;
+  // background-color: orangered;
   height: 100vh;
 }
