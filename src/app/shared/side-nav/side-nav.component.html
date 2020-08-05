@@ -9,7 +9,7 @@
     <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="nav-item" [routerLinkActiveOptions]="{exact: true}">
       <a [routerLink]="[menuItem.path]" class="nav-link">
         <i class="{{menuItem.icon}} nav-icon"></i>
-        <p>{{ menuItem.title }}</p>
+        <p class="nav-text">{{ menuItem.title }}</p>
       </a>
     </li>
   </ul>
