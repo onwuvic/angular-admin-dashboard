@@ -4,4 +4,21 @@
   border-bottom: 1px solid rgba(0,0,0,.1);
   border-radius: 0;
   font-size: 1.6rem;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+
+  &-brand {
+
+  }
+
+  &-more-info {
+
+  }
+
+  &-nav {
+    display: flex;
+  }
 }
