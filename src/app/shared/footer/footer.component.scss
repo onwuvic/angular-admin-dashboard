@@ -1,8 +1,38 @@
 .footer {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 20px 15px;
   margin-right: auto;
   margin-left: auto;
   background-color: #fff;
   line-height: 20px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+
+  &-nav {
+    &-list {
+      list-style: none;
+    }
+
+    &-item {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    &-link {
+      &:link, &:visited {
+        color: var(--color-grey-light-5);
+      }
+
+      &:hover, &:active {
+        color: var(--color-grey-dark-2);
+      }
+    }
+  }
+
+  &-copyright {
+    color: var(--color-grey-dark-2);
+  }
 }
