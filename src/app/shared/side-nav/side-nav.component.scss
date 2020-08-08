@@ -31,7 +31,7 @@
     font-size: 1.4rem;
     list-style: none;
 
-    &-item.active > a {
+    &-item.active > a, &-item.active-pro > a {
       color: var(--color-white);
       opacity: 1;
       background: rgba(255,255,255,.23);

@@ -6,7 +6,7 @@
   </div>
 
   <ul class="nav">
-    <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="nav-item" [routerLinkActiveOptions]="{exact: true}">
+    <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="nav-item {{menuItem.class}}" [routerLinkActiveOptions]="{exact: true}">
       <a [routerLink]="[menuItem.path]" class="nav-link">
         <i class="{{menuItem.icon}} nav-icon"></i>
         <p>{{ menuItem.title }}</p>
