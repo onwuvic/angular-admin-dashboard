@@ -6,16 +6,17 @@
   font-size: 1.6rem;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
   display: flex;
+  align-items: center;
 
   &-brand {
-
+    font-size: 2rem;
+    color: var(--color-grey-dark-2);
+    margin-right: 30px;
   }
 
   &-more-info {
-
+    margin-right: auto;
   }
 
   &-nav {
