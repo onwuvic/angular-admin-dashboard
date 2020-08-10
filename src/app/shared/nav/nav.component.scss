@@ -13,6 +13,11 @@
     font-size: 2rem;
     color: var(--color-grey-dark-2);
     margin-right: 30px;
+    cursor: pointer;
+
+    &:hover {
+      color: #5e5e5e;
+    }
   }
 
   &-more-info {
