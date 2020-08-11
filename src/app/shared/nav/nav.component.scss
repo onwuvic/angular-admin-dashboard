@@ -12,7 +12,7 @@
   &-brand {
     font-size: 2rem;
     color: var(--color-grey-dark-2);
-    margin-right: 30px;
+    margin-right: 4rem;
     cursor: pointer;
 
     &:hover {
@@ -21,7 +21,25 @@
   }
 
   &-more-info {
+    display: flex;
+    align-items: center;
     margin-right: auto;
+    color: var(--color-grey-light-5);
+
+    [class^="pe-7s-"] {
+      font-size: 2rem;
+      line-height: 16px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+
+    [class^="pe-7s-"]:hover {
+      color: var(--color-link);
+    }
   }
 
   &-nav {
