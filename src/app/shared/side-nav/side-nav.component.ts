@@ -16,4 +16,11 @@ export class SideNavComponent implements OnInit {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
   }
 
+  isMobileMenu(): boolean {
+    if (window.innerWidth > 991) {
+      return false;
+    }
+    return true;
+  }
+
 }
