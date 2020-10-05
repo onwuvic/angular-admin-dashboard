@@ -1,5 +1,5 @@
 .navbar {
-  min-height: 50px;
+  min-height: 62px;
   background-color: rgba(255,255,255,.96);
   border-bottom: 1px solid rgba(0,0,0,.1);
   border-radius: 0;
@@ -20,47 +20,35 @@
     }
   }
 
-  &-more-info {
+  &-collapsable {
     display: flex;
     align-items: center;
-    margin-right: auto;
-    color: var(--color-grey-light-5);
+    justify-content: space-between;
+    flex: auto;
 
-    [class^="pe-7s-"] {
-      font-size: 2rem;
+    a > [class^="fa"] {
+      font-size: 1.9rem;
       line-height: 16px;
-      font-weight: 600;
-      cursor: pointer;
-
-      &:not(:last-child) {
-        margin-right: 4rem;
-      }
-    }
-
-    [class^="pe-7s-"]:hover {
-      color: var(--color-link);
     }
   }
 
-  &-nav {
-    display: flex;
-    align-items: center;
+  &-list {
     color: var(--color-grey-light-5);
+    list-style: none;
+  }
 
-    &-image {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      border: 1px solid var(--color-grey-light-6);
-      margin-right: .7rem;
+  &-item {
+    display: inline-block;
+  }
+
+  &-link {
+    &:link, &:visited {
+      padding: 10px 15px;
+      margin: 10px 3px;
     }
 
-    &-name {
-      margin-right: .7rem;
-    }
-
-    &-icon {
-      cursor: pointer;
+    &:hover, &:active {
+      color: var(--color-link);
     }
   }
 }
