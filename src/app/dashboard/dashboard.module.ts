@@ -9,10 +9,11 @@ import { UserComponent } from './components/user/user.component';
 import { TableComponent } from './components/table/table.component';
 import { MapComponent } from './components/map/map.component';
 import { NotificationComponent } from './components/notification/notification.component';
+import { SettingsComponent } from './components/settings/settings.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, HomeComponent, UserComponent, TableComponent, MapComponent, NotificationComponent],
+  declarations: [DashboardComponent, HomeComponent, UserComponent, TableComponent, MapComponent, NotificationComponent, SettingsComponent],
   imports: [
     CommonModule,
     SharedModule,
