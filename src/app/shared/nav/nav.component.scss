@@ -26,9 +26,19 @@
     justify-content: space-between;
     flex: auto;
 
+    a {
+      position: relative;
+    }
+
     a > [class^="fa"] {
       font-size: 1.9rem;
       line-height: 16px;
+    }
+
+    [class~="fa-caret-down"] {
+      vertical-align: middle;
+      margin-left: .4rem;
+      font-size: 1.4rem !important;
     }
   }
 
@@ -51,4 +61,20 @@
       color: var(--color-link);
     }
   }
+}
+
+.notification {
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+  padding: 0 5px;
+  text-align: center;
+  min-width: 18px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 7px;
 }
