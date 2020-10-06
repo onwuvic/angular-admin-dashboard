@@ -6,10 +6,13 @@ import { DashboardComponent } from './dashboard.component';
 import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './components/home/home.component';
 import { UserComponent } from './components/user/user.component';
+import { TableComponent } from './components/table/table.component';
+import { MapComponent } from './components/map/map.component';
+import { NotificationComponent } from './components/notification/notification.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, HomeComponent, UserComponent],
+  declarations: [DashboardComponent, HomeComponent, UserComponent, TableComponent, MapComponent, NotificationComponent],
   imports: [
     CommonModule,
     SharedModule,
